@@ -1,0 +1,24 @@
+﻿@using System.Web.Optimization
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    @Styles.Render("~/bundles/bootstrapcss")
+    @Styles.Render("~/bundles/commoncss")
+    @Styles.Render("~/bundles/permanentmarker")
+    @Styles.Render("~/bundles/alegreya")
+    <title>@ViewBag.Title</title>
+</head>
+<body class="main-content">
+    
+    <div>
+        @Html.Partial("_Navbar")
+        @RenderBody()
+        @Html.Partial("_Footer")
+    </div>
+</body>
+@Scripts.Render("~/bundles/jqueryjs")
+@Scripts.Render("~/bundles/bootstrapjs")
+
+</html>

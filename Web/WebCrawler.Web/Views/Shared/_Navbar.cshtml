@@ -1,0 +1,29 @@
+﻿<!--Structure for the navigation bar with brand, logo, and buttons-->
+
+<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+    <div class="container-fluid" style="vertical-align:middle;">
+        <div class="navbar-header page-scroll">
+            <!--Create a menu button for mobile display-->
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#nav-collapse-1" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <!--Navbar brand-->
+            <a href="@Url.Action("Index")" role="button" class="navbar-brand navbar-bran smooth-scroll">Gamer's Dungeon</a>
+         </div>
+          <!--Create the navigational buttons on the right side of the navbar-->
+         <div class="collapse navbar-collapse navbar-right" id="nav-collapse-1">
+            <ul class="nav navbar-nav">
+                  <li>
+                     <a class="nav-buttons" href="@Url.Action("GamesIndex")">Games</a>
+                   </li>
+                   <li>
+                       <a class="nav-buttons" href="@Url.Action("GamesIndex")">About</a>
+                   </li>
+            </ul>
+            
+        </div>
+    </div>
+</nav>
